@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import styled from "styled-components";
+import './TodoRow.css'
 
 class TodoRow extends Component{
     shouldComponentUpdate(nextProps, nextState){
@@ -11,30 +11,18 @@ class TodoRow extends Component{
     render(){
         const{index, todo, handleClickRemove} = this.props;
         return(
-            <Container>
-                <Text onClick={() => handleClickRemove(index)}>
-                    {todo}
-                </Text>
-            </Container>
+            <div className="textContainer">
+                <div className="text">
+                    {todo} 
+                </div>
+                <button 
+                    className="buttonstyle"
+                    onClick={() => handleClickRemove(index)}>
+                    X
+                </button>
+            </div>
         )
     }
-
 }
-
-const Container = styled.div`
-    margin:10%;
-    margin-top:2px;
-    width:80%;
-    text-align:left;
-`;
-
-const Text = styled.div`
-    display:inline-block;
-    cursor:pointer;
-    font-size:32px;
-    &:hover {
-    opacity: 0.4;
-  }
-`;
 
 export default TodoRow

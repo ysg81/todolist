@@ -24,7 +24,7 @@ class App extends Component {
         <Container query={this.state.query}>
 
           <input className="theme"
-            placeholder="사진 테마를 입력하세요"
+            placeholder="사진 테마를 입력하세요 (Ex.candy)"
             onKeyPress={this.handleInputKeyPress}
           ></input>
 

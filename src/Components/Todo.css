@@ -1,8 +1,13 @@
+.todoContainer{
+    margin-top:44px;
+    text-align:center;
+}
+
 .todo{
+    text-align:center;
     width:80%;
     height:33px;
     padding:10px;
-    margin:40px;
     font-size:22px;
     border:1px solid silver;
     border-radius: 11px;

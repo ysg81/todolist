@@ -15,7 +15,7 @@ const Content = () =>{
 const Container = styled.div`
     position:absolute;
     right:0;
-    top:33px;
+    top:23px;
     width:500px;
     height:calc(100% - 33px);
     color:white;

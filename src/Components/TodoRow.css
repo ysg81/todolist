@@ -1,0 +1,28 @@
+.textContainer{
+    margin-left:8%;
+    margin-right:8%;
+    height:40px;
+    margin-top:44px;
+
+}
+
+.text{
+    margin-left:10%;
+    position : absolute;
+    left:0;
+    display: inline-block;
+    font-size: 32px;
+}
+
+.buttonstyle{
+    margin-right:10%;
+    position: absolute;
+    right : 0;
+    width: 42px;
+    height: 42px;
+    font-size:25px;
+    background:transparent;
+    color:red;
+    cursor: pointer;
+    outline: none;
+}

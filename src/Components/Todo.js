@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import './Todo.css'
 import TodoList from './TodoList';
 
@@ -16,14 +15,14 @@ class Todo extends Component {
 
     render() {
         return (
-            <Container>
+            <div className="todoContainer">
                 <input
                     className = "todo"
                     placeholder="오늘 할 일"
                     onKeyPress={this.handleInputKeyPress}>
                 </input>
                 <TodoList todoList={this.state.todoList} handleClickRemove={this.handleClickRemove}></TodoList>
-            </Container>
+            </div>
         );
     }
 
@@ -56,11 +55,6 @@ class Todo extends Component {
         }
     }
 }
-
-const Container = styled.div`
-    margin-top:44px;
-    text-align:center;
-`;
 
 
 export default Todo;
