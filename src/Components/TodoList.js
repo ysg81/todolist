@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import TodoRow from './TodoRow'
 
-const TodoList = ({todoList, handleClickRemove}) => {
+const TodoList = ({ todoList, handleClickRemove }) => {
     return (
         <div>
             <Container>{todoList.map((todo, index) => (

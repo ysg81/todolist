@@ -49,12 +49,12 @@ class Todo extends Component {
                         ...state.todoList.slice(0,index),
                         ...state.todoList.slice(index+1)
                     ]
-                })
-            ),
-            () =>
-            localStorage.setItem("todoList", JSON.stringify(this.state.todoList))
+                }),
+                () =>
+                localStorage.setItem("todoList", JSON.stringify(this.state.todoList))
+            )
         }
-    };
+    }
 }
 
 const Container = styled.div`

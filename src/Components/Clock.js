@@ -16,7 +16,7 @@ class Clock extends Component {
         this.oneMinutCall = setInterval(() => this.getDate(), 60000);
     }
     
-    componentWillMount() {
+    componentDidMount() {
         clearInterval(this.oneMinutCall);
     }
     render() {
